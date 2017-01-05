@@ -9,7 +9,8 @@ import pandas as pd
 import matplotlib.pylab as plt
 from sklearn.linear_model import LinearRegression
 #分训练集和测试集
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
+#from sklearn.cross_validation import train_test_split
 
 df = pd.read_csv('winequality-red.csv', sep =';')
 #变量名并排除最后一个
@@ -25,7 +26,8 @@ print('R-squared: ', regressor.score(X_test, y_test))
 
 ###############################################################
 #交叉验证
-from sklearn.cross_validation import cross_val_score
+from sklearn.model_selection import cross_val_score
+#from sklearn.cross_validation import cross_val_score
 regressor = LinearRegression()
 #交叉验证
 scores = cross_val_score(regressor, X, y, cv = 5)
