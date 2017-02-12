@@ -12,7 +12,6 @@ from sklearn.linear_model.logistic import LogisticRegression
 #from sklearn.cross_validation import train_test_split
 from sklearn.model_selection import train_test_split
 
-
 df = pd.read_csv('smsspamcollection/SMSSpamCollection', sep = '\t', header = None)
 print(df.head())
 print('含spam短信数量:', df[df[0] == 'spam'][0].count())
