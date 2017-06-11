@@ -7,7 +7,7 @@ Created on Thu Jan  5 21:00:39 2017
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import euclidean_distances
 corpus = [
-    'UNC played Duck in basketball',
+    'UNC and UNC played Duck in basketball',
     'Duck lost the basketball game',
     'I ate a sandwich',
     'Every sandwich was eaten by him'
